@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A62555C3693AEC6FB3272AD /* Pods_Coffee_Co_DeliveryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6AB4546A6160F427E1E4392 /* Pods_Coffee_Co_DeliveryTests.framework */; };
+		D602E5EB618016C6516B32DD /* Pods_Coffee_Co_Delivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF3354CDA6590127FC2A64D /* Pods_Coffee_Co_Delivery.framework */; };
+		DC4D493949204B9D0B485E14 /* Pods_Coffee_Co_Delivery_Coffee_Co_DeliveryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA5574B55ADF09E844F200E /* Pods_Coffee_Co_Delivery_Coffee_Co_DeliveryUITests.framework */; };
+		EBBB33B728F8540900014E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33B628F8540900014E03 /* AppDelegate.swift */; };
+		EBBB33B928F8540900014E03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33B828F8540900014E03 /* SceneDelegate.swift */; };
+		EBBB33BB28F8540900014E03 /* CoffeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33BA28F8540900014E03 /* CoffeeListViewController.swift */; };
+		EBBB33BE28F8540900014E03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBB33BC28F8540900014E03 /* Main.storyboard */; };
+		EBBB33C128F8540900014E03 /* Coffee_Co_Delivery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33BF28F8540900014E03 /* Coffee_Co_Delivery.xcdatamodeld */; };
+		EBBB33C328F8540A00014E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBB33C228F8540A00014E03 /* Assets.xcassets */; };
+		EBBB33C628F8540A00014E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBB33C428F8540A00014E03 /* LaunchScreen.storyboard */; };
+		EBBB33D128F8540A00014E03 /* Coffee_Co_DeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33D028F8540A00014E03 /* Coffee_Co_DeliveryTests.swift */; };
+		EBBB33DB28F8540A00014E03 /* Coffee_Co_DeliveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33DA28F8540A00014E03 /* Coffee_Co_DeliveryUITests.swift */; };
+		EBBB33DD28F8540A00014E03 /* Coffee_Co_DeliveryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33DC28F8540A00014E03 /* Coffee_Co_DeliveryUITestsLaunchTests.swift */; };
+		EBBB33EA28F8547700014E03 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33E928F8547700014E03 /* Router.swift */; };
+		EBBB33EC28F8548E00014E03 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33EB28F8548E00014E03 /* ModuleBuilder.swift */; };
+		EBBB33EE28F8574F00014E03 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33ED28F8574F00014E03 /* NetworkService.swift */; };
+		EBBB33F028F857AB00014E03 /* CoffeeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33EF28F857AB00014E03 /* CoffeeListPresenter.swift */; };
+		EBBB33F228F85B2400014E03 /* CoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33F128F85B2400014E03 /* CoffeeModel.swift */; };
+		EBBB33F528F85D4E00014E03 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33F428F85D4E00014E03 /* HTTPError.swift */; };
+		EBBB33F828F9BDB800014E03 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33F728F9BDB800014E03 /* BannerViewController.swift */; };
+		EBBB33FA28F9C12D00014E03 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33F928F9C12D00014E03 /* BannerView.swift */; };
+		EBBB33FD28F9FFAA00014E03 /* CityDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33FC28F9FFAA00014E03 /* CityDropDown.swift */; };
+		EBBB33FF28FA82F500014E03 /* UIColor+HEX+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB33FE28FA82F500014E03 /* UIColor+HEX+RGBA.swift */; };
+		EBBB340128FA89D200014E03 /* CoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB340028FA89D200014E03 /* CoffeeCell.swift */; };
+		EBBB340828FB329500014E03 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB340728FB329500014E03 /* ContactsViewController.swift */; };
+		EBBB340A28FB32B500014E03 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB340928FB32B500014E03 /* ProfileViewController.swift */; };
+		EBBB340C28FB32CB00014E03 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB340B28FB32CB00014E03 /* CartViewController.swift */; };
+		EBBB340E28FB393700014E03 /* ContactsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB340D28FB393700014E03 /* ContactsPresenter.swift */; };
+		EBBB341028FB397000014E03 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB340F28FB397000014E03 /* ProfilePresenter.swift */; };
+		EBBB341228FB39D300014E03 /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB341128FB39D300014E03 /* CartPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBBB33CD28F8540A00014E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBBB33AB28F8540900014E03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBBB33B228F8540900014E03;
+			remoteInfo = "Coffee&Co Delivery";
+		};
+		EBBB33D728F8540A00014E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBBB33AB28F8540900014E03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBBB33B228F8540900014E03;
+			remoteInfo = "Coffee&Co Delivery";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09DC45D882ADA12024EB8925 /* Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests.release.xcconfig"; path = "Target Support Files/Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests/Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1B8A47B505AA14F460C80D7B /* Pods-Coffee&Co DeliveryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee&Co DeliveryTests.debug.xcconfig"; path = "Target Support Files/Pods-Coffee&Co DeliveryTests/Pods-Coffee&Co DeliveryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		35190AD17EA86A5D4D01C1BF /* Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests.debug.xcconfig"; path = "Target Support Files/Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests/Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BF3354CDA6590127FC2A64D /* Pods_Coffee_Co_Delivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffee_Co_Delivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6AB4546A6160F427E1E4392 /* Pods_Coffee_Co_DeliveryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffee_Co_DeliveryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B601FB0071FD1D3BA01C6BD0 /* Pods-Coffee&Co DeliveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee&Co DeliveryTests.release.xcconfig"; path = "Target Support Files/Pods-Coffee&Co DeliveryTests/Pods-Coffee&Co DeliveryTests.release.xcconfig"; sourceTree = "<group>"; };
+		BBA72A52DCF3D78893839BD7 /* Pods-Coffee&Co Delivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee&Co Delivery.debug.xcconfig"; path = "Target Support Files/Pods-Coffee&Co Delivery/Pods-Coffee&Co Delivery.debug.xcconfig"; sourceTree = "<group>"; };
+		EBBB33B328F8540900014E03 /* Coffee&Co Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee&Co Delivery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBB33B628F8540900014E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBBB33B828F8540900014E03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EBBB33BA28F8540900014E03 /* CoffeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListViewController.swift; sourceTree = "<group>"; };
+		EBBB33BD28F8540900014E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBBB33C028F8540900014E03 /* Coffee_Co_Delivery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coffee_Co_Delivery.xcdatamodel; sourceTree = "<group>"; };
+		EBBB33C228F8540A00014E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBBB33C528F8540A00014E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBBB33C728F8540A00014E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBBB33CC28F8540A00014E03 /* Coffee&Co DeliveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffee&Co DeliveryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBB33D028F8540A00014E03 /* Coffee_Co_DeliveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_Co_DeliveryTests.swift; sourceTree = "<group>"; };
+		EBBB33D628F8540A00014E03 /* Coffee&Co DeliveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffee&Co DeliveryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBB33DA28F8540A00014E03 /* Coffee_Co_DeliveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_Co_DeliveryUITests.swift; sourceTree = "<group>"; };
+		EBBB33DC28F8540A00014E03 /* Coffee_Co_DeliveryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_Co_DeliveryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBBB33E928F8547700014E03 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EBBB33EB28F8548E00014E03 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		EBBB33ED28F8574F00014E03 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EBBB33EF28F857AB00014E03 /* CoffeeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListPresenter.swift; sourceTree = "<group>"; };
+		EBBB33F128F85B2400014E03 /* CoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeModel.swift; sourceTree = "<group>"; };
+		EBBB33F428F85D4E00014E03 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		EBBB33F728F9BDB800014E03 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		EBBB33F928F9C12D00014E03 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		EBBB33FC28F9FFAA00014E03 /* CityDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDropDown.swift; sourceTree = "<group>"; };
+		EBBB33FE28FA82F500014E03 /* UIColor+HEX+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HEX+RGBA.swift"; sourceTree = "<group>"; };
+		EBBB340028FA89D200014E03 /* CoffeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCell.swift; sourceTree = "<group>"; };
+		EBBB340728FB329500014E03 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		EBBB340928FB32B500014E03 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EBBB340B28FB32CB00014E03 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		EBBB340D28FB393700014E03 /* ContactsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsPresenter.swift; sourceTree = "<group>"; };
+		EBBB340F28FB397000014E03 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		EBBB341128FB39D300014E03 /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
+		EDA5574B55ADF09E844F200E /* Pods_Coffee_Co_Delivery_Coffee_Co_DeliveryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffee_Co_Delivery_Coffee_Co_DeliveryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADDFD41F373D7D3FA773753 /* Pods-Coffee&Co Delivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee&Co Delivery.release.xcconfig"; path = "Target Support Files/Pods-Coffee&Co Delivery/Pods-Coffee&Co Delivery.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBBB33B028F8540900014E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D602E5EB618016C6516B32DD /* Pods_Coffee_Co_Delivery.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB33C928F8540A00014E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A62555C3693AEC6FB3272AD /* Pods_Coffee_Co_DeliveryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB33D328F8540A00014E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4D493949204B9D0B485E14 /* Pods_Coffee_Co_Delivery_Coffee_Co_DeliveryUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBBB33AA28F8540900014E03 = {
+			isa = PBXGroup;
+			children = (
+				EBBB33B528F8540900014E03 /* Coffee&Co Delivery */,
+				EBBB33CF28F8540A00014E03 /* Coffee&Co DeliveryTests */,
+				EBBB33D928F8540A00014E03 /* Coffee&Co DeliveryUITests */,
+				EBBB33B428F8540900014E03 /* Products */,
+				F2ABFCF850764051470BF20C /* Pods */,
+				F84CA335217F385AAC0CE1AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBBB33B428F8540900014E03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB33B328F8540900014E03 /* Coffee&Co Delivery.app */,
+				EBBB33CC28F8540A00014E03 /* Coffee&Co DeliveryTests.xctest */,
+				EBBB33D628F8540A00014E03 /* Coffee&Co DeliveryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBBB33B528F8540900014E03 /* Coffee&Co Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB33B628F8540900014E03 /* AppDelegate.swift */,
+				EBBB33B828F8540900014E03 /* SceneDelegate.swift */,
+				EBBB340728FB329500014E03 /* ContactsViewController.swift */,
+				EBBB340D28FB393700014E03 /* ContactsPresenter.swift */,
+				EBBB340F28FB397000014E03 /* ProfilePresenter.swift */,
+				EBBB341128FB39D300014E03 /* CartPresenter.swift */,
+				EBBB340928FB32B500014E03 /* ProfileViewController.swift */,
+				EBBB340B28FB32CB00014E03 /* CartViewController.swift */,
+				EBBB33E928F8547700014E03 /* Router.swift */,
+				EBBB33EB28F8548E00014E03 /* ModuleBuilder.swift */,
+				EBBB33F328F85D0A00014E03 /* ServiceLayer */,
+				EBBB33F128F85B2400014E03 /* CoffeeModel.swift */,
+				EBBB33F628F8AB6E00014E03 /* CoffeeListModule */,
+				EBBB33F428F85D4E00014E03 /* HTTPError.swift */,
+				EBBB33FE28FA82F500014E03 /* UIColor+HEX+RGBA.swift */,
+				EBBB33BC28F8540900014E03 /* Main.storyboard */,
+				EBBB33C228F8540A00014E03 /* Assets.xcassets */,
+				EBBB33C428F8540A00014E03 /* LaunchScreen.storyboard */,
+				EBBB33C728F8540A00014E03 /* Info.plist */,
+				EBBB33BF28F8540900014E03 /* Coffee_Co_Delivery.xcdatamodeld */,
+			);
+			path = "Coffee&Co Delivery";
+			sourceTree = "<group>";
+		};
+		EBBB33CF28F8540A00014E03 /* Coffee&Co DeliveryTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB33D028F8540A00014E03 /* Coffee_Co_DeliveryTests.swift */,
+			);
+			path = "Coffee&Co DeliveryTests";
+			sourceTree = "<group>";
+		};
+		EBBB33D928F8540A00014E03 /* Coffee&Co DeliveryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB33DA28F8540A00014E03 /* Coffee_Co_DeliveryUITests.swift */,
+				EBBB33DC28F8540A00014E03 /* Coffee_Co_DeliveryUITestsLaunchTests.swift */,
+			);
+			path = "Coffee&Co DeliveryUITests";
+			sourceTree = "<group>";
+		};
+		EBBB33F328F85D0A00014E03 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB33ED28F8574F00014E03 /* NetworkService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		EBBB33F628F8AB6E00014E03 /* CoffeeListModule */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB33EF28F857AB00014E03 /* CoffeeListPresenter.swift */,
+				EBBB33FB28F9C13600014E03 /* Views */,
+			);
+			path = CoffeeListModule;
+			sourceTree = "<group>";
+		};
+		EBBB33FB28F9C13600014E03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB33BA28F8540900014E03 /* CoffeeListViewController.swift */,
+				EBBB340028FA89D200014E03 /* CoffeeCell.swift */,
+				EBBB33F728F9BDB800014E03 /* BannerViewController.swift */,
+				EBBB33F928F9C12D00014E03 /* BannerView.swift */,
+				EBBB33FC28F9FFAA00014E03 /* CityDropDown.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2ABFCF850764051470BF20C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBA72A52DCF3D78893839BD7 /* Pods-Coffee&Co Delivery.debug.xcconfig */,
+				FADDFD41F373D7D3FA773753 /* Pods-Coffee&Co Delivery.release.xcconfig */,
+				35190AD17EA86A5D4D01C1BF /* Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests.debug.xcconfig */,
+				09DC45D882ADA12024EB8925 /* Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests.release.xcconfig */,
+				1B8A47B505AA14F460C80D7B /* Pods-Coffee&Co DeliveryTests.debug.xcconfig */,
+				B601FB0071FD1D3BA01C6BD0 /* Pods-Coffee&Co DeliveryTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F84CA335217F385AAC0CE1AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BF3354CDA6590127FC2A64D /* Pods_Coffee_Co_Delivery.framework */,
+				EDA5574B55ADF09E844F200E /* Pods_Coffee_Co_Delivery_Coffee_Co_DeliveryUITests.framework */,
+				A6AB4546A6160F427E1E4392 /* Pods_Coffee_Co_DeliveryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBBB33B228F8540900014E03 /* Coffee&Co Delivery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBB33E028F8540A00014E03 /* Build configuration list for PBXNativeTarget "Coffee&Co Delivery" */;
+			buildPhases = (
+				46D3002FBFEFCFE4387A735F /* [CP] Check Pods Manifest.lock */,
+				EBBB33AF28F8540900014E03 /* Sources */,
+				EBBB33B028F8540900014E03 /* Frameworks */,
+				EBBB33B128F8540900014E03 /* Resources */,
+				772A08939A74E53BD4D8094F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coffee&Co Delivery";
+			productName = "Coffee&Co Delivery";
+			productReference = EBBB33B328F8540900014E03 /* Coffee&Co Delivery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBBB33CB28F8540A00014E03 /* Coffee&Co DeliveryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBB33E328F8540A00014E03 /* Build configuration list for PBXNativeTarget "Coffee&Co DeliveryTests" */;
+			buildPhases = (
+				2202EE959F0D93C5647FD8C0 /* [CP] Check Pods Manifest.lock */,
+				EBBB33C828F8540A00014E03 /* Sources */,
+				EBBB33C928F8540A00014E03 /* Frameworks */,
+				EBBB33CA28F8540A00014E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBBB33CE28F8540A00014E03 /* PBXTargetDependency */,
+			);
+			name = "Coffee&Co DeliveryTests";
+			productName = "Coffee&Co DeliveryTests";
+			productReference = EBBB33CC28F8540A00014E03 /* Coffee&Co DeliveryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBBB33D528F8540A00014E03 /* Coffee&Co DeliveryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBB33E628F8540A00014E03 /* Build configuration list for PBXNativeTarget "Coffee&Co DeliveryUITests" */;
+			buildPhases = (
+				554746DFB1AC34BA20452CC0 /* [CP] Check Pods Manifest.lock */,
+				EBBB33D228F8540A00014E03 /* Sources */,
+				EBBB33D328F8540A00014E03 /* Frameworks */,
+				EBBB33D428F8540A00014E03 /* Resources */,
+				1D21B2E7422D8F9CEC33E83F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBBB33D828F8540A00014E03 /* PBXTargetDependency */,
+			);
+			name = "Coffee&Co DeliveryUITests";
+			productName = "Coffee&Co DeliveryUITests";
+			productReference = EBBB33D628F8540A00014E03 /* Coffee&Co DeliveryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBBB33AB28F8540900014E03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					EBBB33B228F8540900014E03 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					EBBB33CB28F8540A00014E03 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = EBBB33B228F8540900014E03;
+					};
+					EBBB33D528F8540A00014E03 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = EBBB33B228F8540900014E03;
+					};
+				};
+			};
+			buildConfigurationList = EBBB33AE28F8540900014E03 /* Build configuration list for PBXProject "Coffee&Co Delivery" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBBB33AA28F8540900014E03;
+			productRefGroup = EBBB33B428F8540900014E03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBBB33B228F8540900014E03 /* Coffee&Co Delivery */,
+				EBBB33CB28F8540A00014E03 /* Coffee&Co DeliveryTests */,
+				EBBB33D528F8540A00014E03 /* Coffee&Co DeliveryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBBB33B128F8540900014E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBB33C628F8540A00014E03 /* LaunchScreen.storyboard in Resources */,
+				EBBB33C328F8540A00014E03 /* Assets.xcassets in Resources */,
+				EBBB33BE28F8540900014E03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB33CA28F8540A00014E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB33D428F8540A00014E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D21B2E7422D8F9CEC33E83F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests/Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests/Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests/Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2202EE959F0D93C5647FD8C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coffee&Co DeliveryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46D3002FBFEFCFE4387A735F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coffee&Co Delivery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		554746DFB1AC34BA20452CC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		772A08939A74E53BD4D8094F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coffee&Co Delivery/Pods-Coffee&Co Delivery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coffee&Co Delivery/Pods-Coffee&Co Delivery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coffee&Co Delivery/Pods-Coffee&Co Delivery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBBB33AF28F8540900014E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBB341028FB397000014E03 /* ProfilePresenter.swift in Sources */,
+				EBBB33F028F857AB00014E03 /* CoffeeListPresenter.swift in Sources */,
+				EBBB33BB28F8540900014E03 /* CoffeeListViewController.swift in Sources */,
+				EBBB33B728F8540900014E03 /* AppDelegate.swift in Sources */,
+				EBBB33EA28F8547700014E03 /* Router.swift in Sources */,
+				EBBB341228FB39D300014E03 /* CartPresenter.swift in Sources */,
+				EBBB340828FB329500014E03 /* ContactsViewController.swift in Sources */,
+				EBBB33FD28F9FFAA00014E03 /* CityDropDown.swift in Sources */,
+				EBBB340128FA89D200014E03 /* CoffeeCell.swift in Sources */,
+				EBBB340A28FB32B500014E03 /* ProfileViewController.swift in Sources */,
+				EBBB340E28FB393700014E03 /* ContactsPresenter.swift in Sources */,
+				EBBB340C28FB32CB00014E03 /* CartViewController.swift in Sources */,
+				EBBB33FF28FA82F500014E03 /* UIColor+HEX+RGBA.swift in Sources */,
+				EBBB33B928F8540900014E03 /* SceneDelegate.swift in Sources */,
+				EBBB33F228F85B2400014E03 /* CoffeeModel.swift in Sources */,
+				EBBB33F828F9BDB800014E03 /* BannerViewController.swift in Sources */,
+				EBBB33C128F8540900014E03 /* Coffee_Co_Delivery.xcdatamodeld in Sources */,
+				EBBB33FA28F9C12D00014E03 /* BannerView.swift in Sources */,
+				EBBB33EC28F8548E00014E03 /* ModuleBuilder.swift in Sources */,
+				EBBB33F528F85D4E00014E03 /* HTTPError.swift in Sources */,
+				EBBB33EE28F8574F00014E03 /* NetworkService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB33C828F8540A00014E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBB33D128F8540A00014E03 /* Coffee_Co_DeliveryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB33D228F8540A00014E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBB33DD28F8540A00014E03 /* Coffee_Co_DeliveryUITestsLaunchTests.swift in Sources */,
+				EBBB33DB28F8540A00014E03 /* Coffee_Co_DeliveryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBBB33CE28F8540A00014E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBBB33B228F8540900014E03 /* Coffee&Co Delivery */;
+			targetProxy = EBBB33CD28F8540A00014E03 /* PBXContainerItemProxy */;
+		};
+		EBBB33D828F8540A00014E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBBB33B228F8540900014E03 /* Coffee&Co Delivery */;
+			targetProxy = EBBB33D728F8540A00014E03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBBB33BC28F8540900014E03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBBB33BD28F8540900014E03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBBB33C428F8540A00014E03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBBB33C528F8540A00014E03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBBB33DE28F8540A00014E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBBB33DF28F8540A00014E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBBB33E128F8540A00014E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBA72A52DCF3D78893839BD7 /* Pods-Coffee&Co Delivery.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coffee&Co Delivery/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kirill.Coffee-Co-Delivery";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBBB33E228F8540A00014E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FADDFD41F373D7D3FA773753 /* Pods-Coffee&Co Delivery.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coffee&Co Delivery/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kirill.Coffee-Co-Delivery";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EBBB33E428F8540A00014E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8A47B505AA14F460C80D7B /* Pods-Coffee&Co DeliveryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kirill.Coffee-Co-DeliveryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coffee&Co Delivery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Coffee&Co Delivery";
+			};
+			name = Debug;
+		};
+		EBBB33E528F8540A00014E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B601FB0071FD1D3BA01C6BD0 /* Pods-Coffee&Co DeliveryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kirill.Coffee-Co-DeliveryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coffee&Co Delivery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Coffee&Co Delivery";
+			};
+			name = Release;
+		};
+		EBBB33E728F8540A00014E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35190AD17EA86A5D4D01C1BF /* Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kirill.Coffee-Co-DeliveryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Coffee&Co Delivery";
+			};
+			name = Debug;
+		};
+		EBBB33E828F8540A00014E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09DC45D882ADA12024EB8925 /* Pods-Coffee&Co Delivery-Coffee&Co DeliveryUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kirill.Coffee-Co-DeliveryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Coffee&Co Delivery";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBBB33AE28F8540900014E03 /* Build configuration list for PBXProject "Coffee&Co Delivery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBB33DE28F8540A00014E03 /* Debug */,
+				EBBB33DF28F8540A00014E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBBB33E028F8540A00014E03 /* Build configuration list for PBXNativeTarget "Coffee&Co Delivery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBB33E128F8540A00014E03 /* Debug */,
+				EBBB33E228F8540A00014E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBBB33E328F8540A00014E03 /* Build configuration list for PBXNativeTarget "Coffee&Co DeliveryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBB33E428F8540A00014E03 /* Debug */,
+				EBBB33E528F8540A00014E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBBB33E628F8540A00014E03 /* Build configuration list for PBXNativeTarget "Coffee&Co DeliveryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBB33E728F8540A00014E03 /* Debug */,
+				EBBB33E828F8540A00014E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EBBB33BF28F8540900014E03 /* Coffee_Co_Delivery.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EBBB33C028F8540900014E03 /* Coffee_Co_Delivery.xcdatamodel */,
+			);
+			currentVersion = EBBB33C028F8540900014E03 /* Coffee_Co_Delivery.xcdatamodel */;
+			path = Coffee_Co_Delivery.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EBBB33AB28F8540900014E03 /* Project object */;
+}
